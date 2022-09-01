@@ -1,2 +1,2 @@
-# presentation
-Template for latex beam
+# Presentation
+Template for latex beam presentation
