@@ -1,26 +1,34 @@
 \documentclass{beamer}
 
-%	PRESENTATION INFO
+% Русский и английский язык
 
-\title[Short Title]{Full Presentation Title} % The short title in the optional parameter appears at the bottom of every slide, the full title in the main parameter is only on the title page
+\usepackage[T2A]{fontenc}    
+\usepackage[utf8]{inputenc}  % зависит от кодировки Вашего документа
+\usepackage[english,russian]{babel}  % если использовать вставки на английском не нужно, то можно в параметрах оставить только 'russian'
 
-\subtitle{Optional Subtitle} % Presentation subtitle, remove this command if a subtitle isn't required
+% Информация о презентации
 
-\author[Илья Быков]{Илья Быков} % Presenter name(s), the optional parameter can contain a shortened version to appear on the bottom of every slide, while the main parameter will appear on the title slide
+\title{Full Presentation Title} Заголовок
 
-\institute[SPBGU]{Saint Petersburg State Universitye \\ \smallskip \textit{i.bykov@spbu.ru}} % Your institution, the optional parameter can be used for the institution shorthand and will appear on the bottom of every slide after author names, while the required parameter is used on the title slide and can include your email address or additional information on separate lines
+\subtitle{Optional Subtitle} % Подзаголовок
 
-\date[\today]{COMSDS \\ \today} % Presentation date or conference/meeting name, the optional parameter can contain a shortened version to appear on the bottom of every slide, while the required parameter value is output to the title slide
+\author{Илья Быков}
+
+\institute{Санкт-Петербургский государственный университет} \\ \smallskip \textit{i.bykov@spbu.ru}} % Аффилиация
+
+\date{Занятия \\ \today} % Место и дата
+
+% Начало документа
 
 \begin{document}
 
-%	TITLE SLIDE
+% Титульный слайд
 
 \begin{frame}
 	\titlepage % Output the title slide, automatically created using the text entered in the PRESENTATION INFORMATION block above
 \end{frame}
 
-%	PRESENTATION BODY SLIDES
+% Основные слайды
 
 \begin{frame}
 	\frametitle{Paragraphs of Text}
@@ -40,15 +48,15 @@
 	Nullam id suscipit ipsum. Aenean lobortis commodo sem, ut commodo leo gravida vitae. Pellentesque vehicula ante iaculis arcu pretium rutrum eget sit amet purus. Integer ornare nulla quis neque ultrices lobortis.
 \end{frame}
 
-%	CLOSING SLIDE
+% Последний слайд
 
 \begin{frame}[plain] % The optional argument 'plain' hides the headline and footline
 	\begin{center}
-		{\Huge The End}
+		{\Huge Конец}
 
 		\bigskip\bigskip % Vertical whitespace
 		
-		{\LARGE Questions? Comments?}
+		{\LARGE Вопросы? Комментарии?}
 	\end{center}
 \end{frame}
 
